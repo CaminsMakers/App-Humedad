@@ -40,12 +40,9 @@ else if (mapeo>95) {humedad=100;}
 else humedad=0;
 
 
-//Serial.println("Humedad =");
-//Serial.println(valor_sensor);
-//Serial.println(mapeo);
+
 Serial.println(humedad);
-//Serial.println("%");
-//Serial.write(humedad);
+
 delay(1000);
 
 }
