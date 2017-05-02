@@ -3,7 +3,6 @@
 #define rxPin 1
 #define txPin 2
 
-
 SoftwareSerial BTSerial (rxPin, txPin);
 
 int sensor = A5;
@@ -14,7 +13,6 @@ int humedad = 0;
 void setup() {
   Serial.begin(9600);
   BTSerial.begin(9600);
-
 }
 
 void loop() {
@@ -39,7 +37,6 @@ else if (mapeo>95) {humedad=100;}
 }
 else humedad=0;
 
-
 //Serial.println("Humedad =");
 //Serial.println(valor_sensor);
 //Serial.println(mapeo);
@@ -47,5 +44,4 @@ Serial.println(humedad);
 //Serial.println("%");
 //Serial.write(humedad);
 delay(1000);
-
 }
